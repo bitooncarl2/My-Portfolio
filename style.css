@@ -1,0 +1,404 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f6fa;
+    color: #263248;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #182848;
+}
+
+.logo span {
+    color: #4b6cb7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #263248;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: #4b6cb7;
+}
+
+/* HOME PAGE */
+
+.hero {
+    min-height: 550px;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #edf1fa, white);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #4b6cb7;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #182848;
+    margin: 15px 0;
+}
+
+.hero h1 span,
+.page-title span {
+    color: #4b6cb7;
+}
+
+.hero h2 {
+    color: #596780;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    line-height: 1.8;
+    color: #68758a;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #4b6cb7;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #182848;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #4b6cb7;
+    color: #4b6cb7;
+}
+
+.hero-image {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    width: 280px;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e5eaf5;
+}
+
+.hero-image h3 {
+    margin-top: 15px;
+    color: #182848;
+}
+
+.hero-image p,
+.hero-image small {
+    color: #68758a;
+    font-size: 13px;
+}
+
+/* SKILLS */
+
+.skills-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: #182848;
+    font-size: 28px;
+}
+
+.skills-section > p {
+    color: #68758a;
+    margin: 10px 0 30px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.skill-card h3 {
+    color: #4b6cb7;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.skill-card p {
+    color: #68758a;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* ABOUT AND CONTACT */
+
+.page-title {
+    text-align: center;
+    padding: 55px 15px 35px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    color: #182848;
+}
+
+.page-title p {
+    color: #68758a;
+    margin-top: 10px;
+}
+
+.content {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.content-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.content-card h2 {
+    color: #4b6cb7;
+    margin-bottom: 15px;
+}
+
+.content-card h3 {
+    color: #182848;
+    font-size: 16px;
+}
+
+.content-card p,
+.content-card li {
+    color: #68758a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* WORK EXPERIENCE */
+
+.experience {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5eaf2;
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.experience-header span {
+    color: #4b6cb7;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.company {
+    margin: 5px 0;
+}
+
+.content-card ul {
+    padding-left: 25px;
+}
+
+/* EDUCATION */
+
+.education {
+    margin-bottom: 20px;
+}
+
+/* KEY SKILLS */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tags span {
+    background: #edf1fa;
+    color: #182848;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.language-title {
+    color: #182848;
+    margin-bottom: 8px;
+}
+
+/* CONTACT */
+
+.contact-container {
+    width: 85%;
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.contact-card h3 {
+    color: #4b6cb7;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: #68758a;
+    font-size: 14px;
+}
+
+.contact-card a:not(.btn) {
+    color: #4b6cb7;
+    text-decoration: none;
+}
+
+.message-card {
+    text-align: center;
+}
+
+.message-card .btn {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #182848;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        padding: 20px 5%;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        width: 92%;
+    }
+
+    .experience-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
